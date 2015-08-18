@@ -1,0 +1,431 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"in",
+				"index"
+			],
+			[
+				"re",
+				"resource"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/views/lists/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 9523,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/views/lists/new.html.erb",
+			"settings":
+			{
+				"buffer_size": 261,
+				"line_ending": "Unix",
+				"name": "<h1>Add TODO list</h1>"
+			}
+		},
+		{
+			"file": "config/routes.rb",
+			"settings":
+			{
+				"buffer_size": 1641,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/controllers/lists_controller.rb",
+			"settings":
+			{
+				"buffer_size": 161,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 369.0,
+		"last_filter": "Package Control: ",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Add Repository"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/eoris/todolist",
+		"/home/eoris/todolist/app",
+		"/home/eoris/todolist/app/assets",
+		"/home/eoris/todolist/app/assets/javascripts",
+		"/home/eoris/todolist/app/assets/stylesheets",
+		"/home/eoris/todolist/app/controllers",
+		"/home/eoris/todolist/app/models",
+		"/home/eoris/todolist/app/views",
+		"/home/eoris/todolist/app/views/lists",
+		"/home/eoris/todolist/config",
+		"/home/eoris/todolist/db",
+		"/home/eoris/todolist/db/migrate"
+	],
+	"file_history":
+	[
+		"/home/eoris/todolist/app/assets/stylesheets/home.scss",
+		"/home/eoris/blog/app/assets/stylesheets/home.scss",
+		"/home/eoris/Рабочий стол/share",
+		"/home/eoris/blog_from_home/app/controllers/application_controller.rb",
+		"/home/eoris/blog_from_home/app/controllers/articles_controller.rb",
+		"/home/eoris/todolist/db/migrate/20150817121929_create_lists.rb",
+		"/home/eoris/blog/app/views/home/index.html.erb",
+		"/home/eoris/todolist/app/controllers/application_controller.rb",
+		"/home/eoris/todolist/app/controllers/lists_controller.rb",
+		"/home/eoris/todolist/db/migrate/20150817113106_create_lists.rb",
+		"/home/eoris/blog/app/controllers/application_controller.rb",
+		"/home/eoris/.ssh/ror_work",
+		"/home/eoris/.ssh/ror_work.pub",
+		"/home/eoris/Рабочий стол/access token git",
+		"/home/eoris/blog/app/controllers/home_controller.rb",
+		"/home/eoris/blog/app/controllers/registrations_controller.rb",
+		"/home/eoris/blog/app/controllers/persons_controller.rb",
+		"/home/eoris/blog/config/routes.rb",
+		"/home/eoris/blog/app/helpers/registrations_helper.rb",
+		"/home/eoris/blog/app/helpers/sessions_helper.rb",
+		"/home/eoris/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/eoris/blog/app/assets/stylesheets/2 home.scss",
+		"/home/eoris/blog/app/assets/stylesheets/1 home.scss",
+		"/home/eoris/blog/app/views/home/2 index.html.erb",
+		"/home/eoris/img_convert/conv/index.html",
+		"/home/eoris/img_convert/conv/index (копия).html",
+		"/home/eoris/img_convert/convert 2.rb",
+		"/home/eoris/img_convert.rb/conv/index (копия).html",
+		"/home/eoris/img_convert.rb/conv/index.html",
+		"/home/eoris/blog/app/assets/stylesheets/application.css",
+		"/home/eoris/blog/app/controllers/sessions_controller.rb",
+		"/home/eoris/blog/app/views/devise/sessions/new.html.erb",
+		"/home/eoris/blog/app/views/home/style_todo.css",
+		"/home/eoris/blog/app/models/user.rb",
+		"/home/eoris/blog/app/views/persons/profile.html.erb",
+		"/home/eoris/blog/app/views/devise/confirmations/new.html.erb",
+		"/home/eoris/blog/app/views/devise/passwords/new.html.erb",
+		"/home/eoris/blog/app/views/devise/passwords/edit.html.erb",
+		"/home/eoris/blog/app/views/index.html.erb",
+		"/home/eoris/blog/Gemfile",
+		"/home/eoris/blog/config/environments/development.rb",
+		"/home/eoris/blog/app/views/layouts/application.html.erb",
+		"/home/eoris/blog/config/application.rb",
+		"/home/eoris/blog/db/migrate/20150728082649_devise_create_users.rb",
+		"/home/eoris/img_convert.rb/index.html",
+		"/home/eoris/img_convert.rb/img_convert.rb",
+		"/home/eoris/blog/app/views/home/index.html",
+		"/home/eoris/ror_work.pub",
+		"/home/eoris/ror_work",
+		"/home/eoris/blog/app/helpers/persons_helper.rb",
+		"/home/eoris/.ssh/id_rsa",
+		"/home/eoris/.config/sublime-text-3/Packages/User/Ruby.sublime-settings",
+		"/home/eoris/.ssh/known_hosts",
+		"/home/eoris/.config/sublime-text-3/Packages/User/HTML (Rails).sublime-settings",
+		"/home/eoris/.ssh/id_rsa.pub",
+		"/home/eoris/.ssh/config",
+		"/home/eoris/blog/.git/logs/refs/heads/master",
+		"/home/eoris/blog/.git/config",
+		"/home/eoris/blog/README.md",
+		"/etc/ssh/ssh_config",
+		"/home/eoris/.config/sublime-text-3/Packages/User/Distraction Free.sublime-settings",
+		"/home/eoris/.config/sublime-text-3/Packages/User/JSON.sublime-settings"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"dead",
+			"font",
+			"article",
+			"@article",
+			"article",
+			"Article",
+			"@article ",
+			"@articles",
+			"@article",
+			"@articles",
+			"_ig",
+			"%>",
+			"<%= image_tag",
+			"alt=",
+			"aly=",
+			"al",
+			"%>",
+			"/%",
+			"alt=",
+			"<img src=\"/images/",
+			"<image",
+			"src=\"img",
+			"<img",
+			"img/",
+			"src=\"img",
+			"img"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/views/lists/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9523,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3105.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/lists/new.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 261,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								105,
+								105
+							]
+						],
+						"settings":
+						{
+							"auto_name": "<h1>Add TODO list</h1>",
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "config/routes.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1641,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								74,
+								74
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/controllers/lists_controller.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								140,
+								140
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "todolist.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 286.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
