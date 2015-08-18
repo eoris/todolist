@@ -1,0 +1,278 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+html {
+  background: linear-gradient(to top, #DEC01C, #F8F3F3) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+h2{
+  text-align: center;
+  font-family: "Arial Rounded MT Bold";
+  margin-bottom: 0px;
+  padding-top: 20px;
+}
+
+h4{
+  text-align: center;
+  margin-top: 0px;
+  padding-bottom: 25px;
+  font-family: autoproject;
+}
+
+.main{
+  padding-bottom: 50px;
+}
+
+.list_window{
+  width: 700px;
+  padding: 0px;
+  margin: auto;
+  background: #FFF;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,1);
+}
+
+.list_title{
+  width: 700px;
+  height: 50px;
+  background: linear-gradient(to top left, #3B609D, #5087BC);  
+}
+
+.note_list_img{
+  float: left;
+  margin: 13px 12px 13px 16px;
+}
+
+span.title{
+  color: white;
+  float: left;
+  line-height: 49px;
+  font-family: "gill sans mt", serif;
+  font-size: 17px
+}
+
+.title_pen_list_img{
+  float: right;
+  margin: 16px 0px;
+  display: none;
+}
+
+.title_trash_list_img{
+  float: right;
+  margin: 16px 19px 16px 10px;
+  padding-left: 10px;
+  border-left: 1px solid #5284BF;
+  display: none;
+}
+
+.list_title:hover .title_pen_list_img{
+  display: inline-block;
+}
+
+ .list_title:hover .title_trash_list_img{
+  display: inline-block;
+ }
+
+div.list_addtask{
+  width: 698px;
+  border: 1px solid #C4C1B9;
+  background: linear-gradient(to top, #E1E1E1, #CCCCCC);
+  display: inline-block;
+}
+
+img.addtask_plus{
+  float: left;
+  margin: 12px 14px 12px 16px;
+}
+
+input.add_field{
+  height: 26px;
+  width: 350px;
+  margin: 8px 0px 8px 0px;
+  padding-left: 10px;
+  font-family: "gill sans mt", serif;
+  font-size: 14px;
+}
+
+input.deadline{
+  height: 26px;
+  width: 150px;
+  margin: 8px 0px 8px -5px;
+  padding-left: 10px;
+  font-family: "gill sans mt", serif;
+  font-size: 14px;
+}
+
+.addtask_button{
+  display: inline-block;
+  background: linear-gradient(to top, #94CBAE, #508767);
+  margin: 8px 0px 8px -4px;
+  padding: 5px 25px 6px 20px;
+  text-decoration: none;
+  border-radius: 0 10px 10px 0;
+  font-family: "gill sans mt", serif;
+  font-size: 14px;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task_ul{
+  display: list-item;
+  list-style: none;
+  width: 700px;
+  position: relative;
+  height: 100%;
+}
+
+ul li:hover{
+  background: #FCFED5;
+}
+
+ul li:last-child:hover{
+  background: #FCFED5;
+  border-radius: 0px 0px 20px 20px;
+}
+
+ul .vertical_lines_1{
+  display: block;
+  min-height: 100%;
+  position: absolute;
+  border-right: 1px solid #F2E2E6;
+  left: 43px;
+}
+
+ul .vertical_lines_2{
+  display: block;
+  min-height: 100%;
+  position: absolute;
+  border-right: 1px solid #F2E2E6;
+  left: 48px;
+}
+
+ul .vertical_lines_3{
+  display: block;
+  min-height: 100%;
+  position: absolute;
+  border-right: 1px solid #E7EBEA;
+  left: 591px;
+}
+
+.task_checkbox{
+  display: inline-block;
+  width: 48px;
+  vertical-align: top;
+}
+
+.checkbox{
+  margin: 17px;
+}
+
+.task_name{
+  display: inline-block;
+  width: 533px;
+  padding: 15px 0 15px 7px;
+  line-height: 14px;
+}
+
+.task_entered_name{
+ display: inline-block;
+ word-wrap: break-word;
+ width: 365px;
+ line-height: 14px;
+ text-align: justify;
+}
+
+.task_deadline_name{
+  display: inline-block;
+  vertical-align: top;
+  line-height: 14px;
+  padding-left: 15px;
+}
+
+.task_deadline_date{
+  display: inline-block;
+  vertical-align: top;
+  line-height: 14px;
+}
+
+.task_img{
+  width: 80px;
+  vertical-align: top;
+  margin: 13px 0 0 7px;
+  display: none;
+}
+
+.task_block:hover .task_img{
+  display: inline-block;
+}
+
+.arrow_list_img{
+  margin-right: 5px;
+}
+
+.pen_list_img{
+  margin: 0 5px 0 5px;
+}
+
+.trash_list_img{
+  margin-left: 5px;
+}
+
+.button{
+  border-radius: 3px 3px 3px 3px;
+  background: linear-gradient(to top left, #3B609D, #5087BC);
+  padding: 15px;
+  text-decoration: none;
+  position: relative;
+  left: 45%;
+}
+
+.list_img{
+  position: relative;
+  top: 5px;
+}
+
+.addlist{
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  font-family: "Arial Rounded MT Bold";
+}
+
+/*липки футер*/
+* { margin:0; padding:0; }
+html {
+  height: 100%;
+}
+
+body {
+  height:auto !important;
+  min-height:100%;
+  height:100%;
+  position:relative;
+}
+
+#footer {
+  position:absolute;
+  bottom:10px;
+  width:100%;
+  text-align: center;
+  color: white;
+}
+
+#pusher {
+  clear:left;
+  height:0;
+  padding: 50px;
+}
