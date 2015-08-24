@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  # get 'lists/index'
+  # get 'projects/index'
 
-  resources :lists
+  resources :projects
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   root 'lists#index'
+   root 'projects#index'
 
 
   # Example of regular route:
