@@ -1,22 +1,21 @@
-<h2>SIMPLE TODO LIST</h2>
-<h4>FROM RUBY GARAGE</h4>
- 
-<table>
-  <tr>
-    <th>Title</th>
-    <th colspan="2"></th>
-  </tr>
- 
-  <% @projects.each do |project| %>
-    <tr>
-      <td><%= project.title %></td>
-      <td><%= link_to 'Show', project_path(project) %></td>
-      <td><%= link_to 'Edit', edit_project_path(project) %></td>
-      <td><%= link_to 'Destroy', project_path(project),
-              method: :delete,
-              data: { confirm: 'Are you sure?' } %></td>
+<div class="main">
 
-    </tr>
-  <% end %>
-</table>
-  <%= link_to 'New project', new_project_path %>
+  <h2>SIMPLE TODO LIST</h2>
+  <h4>FROM RUBY GARAGE</h4>
+
+  <div class="list_window">
+      <%= render 'projects' %>
+  </div>
+
+
+  <a href="" class="button">
+      <%= image_tag("addlist_button.gif", class: "list_img") %>
+      <span class="addlist">Add TODO List</span>
+  </a>
+
+  <div id="pusher"></div> <!-- липкий футер -->
+  <div id="footer"> <!-- липкий футер -->
+    <footer>&copy; Ruby Garage</footer>
+  </div>
+  
+</div>
