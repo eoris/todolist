@@ -26,7 +26,6 @@ h4{
 
 .main{
   padding-bottom: 50px;
-  text-align: center;
 }
 
 .list_window{
@@ -231,11 +230,12 @@ ul .vertical_lines_3{
 .button{
   border-radius: 3px 3px 3px 3px;
   background: linear-gradient(to top left, #3B609D, #5087BC);
-  padding: 7px;
+  padding: 7px 10px 7px 10px;
   text-decoration: none;
   display: inline-block;
   margin-top: 20px;
-
+  position: relative;
+  margin-left: 45%;
 }
 
 .list_img{
@@ -250,6 +250,7 @@ ul .vertical_lines_3{
   font-size: 17px;
   color: white;
   font-family: "Arial Rounded MT Bold";
+  text-align: center;
 }
 
 /*липки футер*/
