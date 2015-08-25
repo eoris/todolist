@@ -12,6 +12,13 @@
       <span class="addlist">Add TODO List</span>
   </a>
 
+  <%= form_for @project, remote: true do |f| %>
+
+    <%= f.text_field :title, :placeholder => ' Enter new project here..' %>
+    <%= f.submit 'Add Project'%>
+
+  <% end %>
+
   <div id="pusher"></div> <!-- липкий футер -->
   <div id="footer"> <!-- липкий футер -->
     <footer>&copy; Ruby Garage</footer>

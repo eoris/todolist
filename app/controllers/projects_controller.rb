@@ -1,45 +1,49 @@
 class ProjectsController < ApplicationController
 
   def index
-    @projects = Project.all
+    @project = Project.new
   end
 
   def show
-    @project = Project.find(params[:id])   
+    # @project = Project.find(params[:id])   
   end
 
   def new
-    @project = Project.new    
+    # @project = Project.new    
   end
 
   def edit
-    @project = Project.find(params[:id])
+    # @project = Project.find(params[:id])
   end
 
   def create
-    @project = Project.new(project_params)
+    # @project = Project.new(project_params)
 
-      if @project.save
-        redirect_to @project
-      else
-        render 'new'
-    end
+    # respond_to do |format|
+    #   if @project.save
+    #     format.html { redirect_to @project, notice: 'Project was successfully created.' }
+        
+    #   else
+    #     format.html { render :new }
+        
+    #   end
+    # end
   end
 
   def update
-    @project = Project.find(params[:id])
+    # @project = Project.find(params[:id])
 
-      if @project.update(project_params)
-        redirect_to @project
-      else
-        render 'edit'
-    end    
+    #   if @project.update(project_params)
+    #     redirect_to @project
+    #   else
+    #     render 'edit'
+    # end    
   end
 
   def destroy
-    @project = Project.find(params[:id])
-    @project.destroy   
-    redirect_to projects_path
+    # @project = Project.find(params[:id])
+    # @project.destroy   
+    # redirect_to projects_path
   end
 
 
@@ -49,4 +53,3 @@ class ProjectsController < ApplicationController
     end
 
 end
-
