@@ -1,6 +1,13 @@
-$(document).ready(function(){
+// $(document).ready(function(){
 
-$(".projects").html("<%= escape_javascript(render 'projects') %>");
-$('.new_project').hide();
+// $(".projects").html("<%= escape_javascript(render 'projects') %>");
+// $('.new_project').hide();
 
-)};
+// )};
+
+$(document).ready ->
+  $(".add_new_project").on("ajax:success", (e, data, status, xhr) ->
+    $(".add_new_project").append xhr.responseText
+   ).on "ajax:error", (e, xhr, status, error) ->
+    $(".add_new_project").append "<p>ERROR</p>"
+    console.log("test")
