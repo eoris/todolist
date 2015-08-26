@@ -7,7 +7,7 @@
       <%= render 'projects' %>
   </div>
 
-  <a href="" class="button">
+  <a href="javascript:void(0)" class="button">
       <%= image_tag("addlist_button.gif", class: "list_img") %>
       <span class="addlist">Add TODO List</span>
   </a>
@@ -15,7 +15,7 @@
   <%= form_for @project, remote: true do |f| %>
 
     <%= f.text_field :title, :placeholder => ' Enter new project here..' %>
-    <%= f.submit 'Add Project'%>
+    <%= f.submit 'Add Project', :class => 'add_new_project' %>
 
   <% end %>
 

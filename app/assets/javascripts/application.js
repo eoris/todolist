@@ -14,9 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-// $(function() {
-// 	$(.button).click(function() {
-// 		$('#new_project').css("display", "block");	
-// 	});
-// });
