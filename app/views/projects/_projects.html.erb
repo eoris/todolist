@@ -1,9 +1,10 @@
 <% @projects.each do |project| %>
+
   <div class="list_window">
     <div class="list_title">
       <%= image_tag("note.gif", class: "note_list_img") %>
       <span class="title">Complete the test task for Ruby Garage</span>
-      <%= image_tag("title_trash.gif", class: "title_trash_list_img") %>
+      <%= link_to image_tag("title_trash.gif", class: "title_trash_list_img"), project_path(project), method: :delete %>
       <%= image_tag("title_pen.gif", class: "title_pen_list_img") %>
       <!--img src="/images/title_line.png", class="title_line_list_img"-->
     </div><!--end list_title-->
@@ -15,5 +16,4 @@
     </div><!--end list_addtask-->
   </div><!--end list_window-->
 
-  <%= link_to "Delete project", project_path(project), method: :delete %>
 <% end %>
