@@ -13,12 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150823172010) do
 
-  # create_table "lists", force: :cascade do |t|
-  #   t.string   "name"
-  #   t.datetime "created_at", null: false
-  #   t.datetime "updated_at", null: false
-  # end
-
   create_table "projects", force: :cascade do |t|
     t.string   "title"
     t.datetime "created_at", null: false

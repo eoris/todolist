@@ -1,3 +1,4 @@
+<% @projects.each do |project| %>
   <div class="list_window">
     <div class="list_title">
       <%= image_tag("note.gif", class: "note_list_img") %>
@@ -13,3 +14,6 @@
       <a href="" class="addtask_button">Add Task</a>
     </div><!--end list_addtask-->
   </div><!--end list_window-->
+
+  <%= link_to "Delete project", project_path(project), method: :delete %>
+<% end %>

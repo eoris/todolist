@@ -2,6 +2,7 @@ class ProjectsController < ApplicationController
 
   def index
     @project = Project.new
+    @projects = Project.all
   end
 
   def show
@@ -17,17 +18,12 @@ class ProjectsController < ApplicationController
   end
 
   def create
-    # @project = Project.new(project_params)
-
-    # respond_to do |format|
-    #   if @project.save
-    #     format.html { redirect_to @project, notice: 'Project was successfully created.' }
-        
-    #   else
-    #     format.html { render :new }
-        
-    #   end
-    # end
+    @project = Project.new(project_params)
+    @project.save
+    respond_to do |format|
+      format.html { redirect_to @project }
+      format.js
+    end
   end
 
   def update
@@ -41,9 +37,9 @@ class ProjectsController < ApplicationController
   end
 
   def destroy
-    # @project = Project.find(params[:id])
-    # @project.destroy   
-    # redirect_to projects_path
+    @project = Project.find(params[:id])
+    @project.destroy   
+    redirect_to projects_path
   end
 
 
