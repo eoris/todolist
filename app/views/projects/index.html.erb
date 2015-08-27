@@ -3,8 +3,8 @@
   <h2>SIMPLE TODO LIST</h2>
   <h4>FROM RUBY GARAGE</h4>
 
-  <div class="projects">
-    <%= render @projects %>
+  <div class="projects" >
+    <%= render @projects, id: params[:id] %>
   </div>
 
   <a href="" class="button">
