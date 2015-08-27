@@ -1,1 +1,1 @@
-$('.project').fadeOut(500);
+$('@project').fadeOut(500);
