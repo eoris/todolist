@@ -1,0 +1,1 @@
+$('.project').fadeOut(500);

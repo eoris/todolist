@@ -7,7 +7,6 @@ class ProjectsController < ApplicationController
 
   def create
     @project = Project.new(project_params)
-    # byebug
     respond_to do |format|
       if @project.save
         format.html { redirect_to @project, notice: 'Project was successfully created.' }
@@ -22,8 +21,16 @@ class ProjectsController < ApplicationController
 
   def destroy
     @project = Project.find(params[:id])
-    @project.destroy
-    redirect_to @project
+    respond_to do |format|
+      if @project.destroy
+        format.html { redirect_to @project, notice: 'Project was deleted.' }
+        format.js   {}
+        format.json { render json: @project, status: :created, location: @project }
+      else
+        format.html { render action: "new" }
+        format.json { render json: @project.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
 
