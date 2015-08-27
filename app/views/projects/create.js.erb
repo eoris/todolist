@@ -1,10 +1,2 @@
-$(document).ready(function(){
-
-	$(".projects").html("<%= escape_javascript(render 'projects') %>");
-	$('.new_project').hide();
-
-)};
-
-// $(document).ready(function(){
-// 	$("<%= escape_javascript(render @project) %>").appendTo(".list_window");
-// });	
+$("<%= escape_javascript(render @project) %>").appendTo(".projects_windows");
+$('.new_project').fadeOut(500);
