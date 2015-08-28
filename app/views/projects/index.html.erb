@@ -14,7 +14,7 @@
 
   <%= form_for @project, remote: true do |f| %>
     <%= f.text_field :title, :placeholder => ' Enter new project here..' %>
-    <%= f.submit 'Add Project', :class => 'add_new_project' %>
+    <%= f.submit 'Add Project' %>
   <% end %>
 
   <div id="pusher"></div> <!-- липкий футер -->

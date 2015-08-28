@@ -1,6 +1,12 @@
 <div class="project" id="<%= project.id %>">
 
 <div class="list_title">
+
+  <%= form_for @project, remote: true, method: :patch do |f| %>
+    <%= f.text_field :title %>
+    <%= f.submit 'Update Project', :class => 'edit_project' %>
+  <% end %>
+
   <%= image_tag("note.gif", class: "note_list_img") %>
   <span class="title">
     <%= I18n.t('projects.title', project_name: project.title) %>
