@@ -11,4 +11,16 @@ $(document).ready(function(){
   		$(this).remove();
   	});
   });
+
+  $('.projects').on('click', ".title_pen_list_img", function(){
+  	$('.title').hide();
+  	$('.edit_project').css("display", "inline-block");
+  	return false;
+  });
+
+  // $('.projects').on('click', ".title_pen_list_img", function(){
+  // 	$('.edit_project').css("display", "inline-block");
+  // 	return false;
+  // });
+
 })
