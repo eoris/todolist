@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel='stylesheet' href='style_todo.css'/>
+  <script src='script_todo.js'></script>
+  <title>Simple TODO list</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<h2>SIMPLE TODO LIST</h2>
+<h4>FROM RUBY GARAGE</h4>
+<div class="main">
+  <div class="list_window">
+    <div class="list_title">
+      <%= image_tag("note.gif", class: "note_list_img") %>
+      <span class="title">Complete the test task for Ruby Garage</span>
+      <%= image_tag("title_trash.gif", class: "title_trash_list_img") %>
+      <%= image_tag("title_pen.gif", class: "title_pen_list_img") %>
+      <!--img src="/images/title_line.png", class="title_line_list_img"-->
+    </div><!--end list_title-->
+    <div class="list_addtask">
+      <%= image_tag("plus.gif", class: "addtask_plus") %>
+      <input class="add_field" type="text" placeholder="Start typing here to create a task...">
+      <input class="deadline" type="text" placeholder="deadline">
+      <a href="" class="addtask_button">Add Task</a>
+    </div><!--end list_addtask-->
+    <ul class="task_ul">
+
+      <li class="vertical_lines_1"></li>
+      <li class="vertical_lines_2"></li>
+      <li class="vertical_lines_3"></li>
+
+      <li>
+        <div class="task_block">
+          <div class="task_checkbox">
+            <input class="checkbox" type="checkbox">
+          </div>
+          <div class="task_name">
+            <span class="task_entered_name">Open this mock-up in Adobe Fireworks</span>
+            <span class="task_deadline_name">deadline</span>
+            <span class="task_deadline_date">01.01.2015</span>
+          </div>
+          <div class="task_img">
+            <%= image_tag("list_arrow.png", class: "arrow_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_pen.png", class: "pen_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_trash.png", class: "trash_list_img") %>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="task_block">
+          <div class="task_checkbox">
+            <input class="checkbox" type="checkbox">
+          </div>
+          <div class="task_name">
+            <span class="task_entered_name">Attentively check the file</span>
+            <span class="task_deadline_name">deadline</span>
+            <span class="task_deadline_date">01.01.2015</span>
+          </div>
+          <div class="task_img">
+            <%= image_tag("list_arrow.png", class: "arrow_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_pen.png", class: "pen_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_trash.png", class: "trash_list_img") %>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="task_block">
+          <div class="task_checkbox">
+            <input class="checkbox" type="checkbox">
+          </div>
+          <div class="task_name">
+            <span class="task_entered_name">Write HTML & CSS</span>
+            <span class="task_deadline_name">deadline</span>
+            <span class="task_deadline_date">01.01.2015</span>
+          </div>
+          <div class="task_img">
+            <%= image_tag("list_arrow.png", class: "arrow_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_pen.png", class: "pen_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_trash.png", class: "trash_list_img") %>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="task_block">
+          <div class="task_checkbox">
+            <input class="checkbox" type="checkbox">
+          </div>
+          <div class="task_name">
+            <span class="task_entered_name">Add Javascript to implement adding / editing / removing for todo items list taking into account as more use cases as possible</span>
+            <span class="task_deadline_name">deadline</span>
+            <span class="task_deadline_date">01.01.2015</span>
+          </div>
+          <div class="task_img">
+            <%= image_tag("list_arrow.png", class: "arrow_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_pen.png", class: "pen_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_trash.png", class: "trash_list_img") %>
+          </div>
+        </div>
+      </li>
+
+    </ul> <!--end task_ul-->
+  </div> <!--end list_window-->
+</div> <!--end main-->
+
+
+<div class="main">
+  <div class="list_window">
+    <div class="list_title">
+      <%= image_tag("note.gif", class: "note_list_img") %>
+      <span class="title">Complete the test task for Ruby Garage</span>
+      <%= image_tag("title_trash.gif", class: "title_trash_list_img") %>
+      <%= image_tag("title_pen.gif", class: "title_pen_list_img") %>
+      <!--img src="/images/title_line.png", class="title_line_list_img"-->
+    </div><!--end list_title-->
+    <div class="list_addtask">
+      <%= image_tag("plus.gif", class: "addtask_plus") %>
+      <input class="add_field" type="text" placeholder="Start typing here to create a task..."/>
+      <input class="deadline" type="text" placeholder="deadline"/>
+      <a href="" class="addtask_button">Add Task</a>
+    </div> <!--end list_addtask-->
+    <ul class="task_ul">
+
+      <li class="vertical_lines_1"></li>
+      <li class="vertical_lines_2"></li>
+      <li class="vertical_lines_3"></li>
+
+      <li>
+        <div class="task_block">
+          <div class="task_checkbox">
+            <input class="checkbox" type="checkbox">
+          </div>
+          <div class="task_name">
+            <span class="task_entered_name">Open this mock-up in Adobe Fireworks</span>
+            <span class="task_deadline_name">deadline</span>
+            <span class="task_deadline_date">01.01.2015</span>
+          </div>
+          <div class="task_img">
+            <%= image_tag("list_arrow.png", class: "arrow_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_pen.png", class: "pen_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_trash.png", class: "trash_list_img") %>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="task_block">
+          <div class="task_checkbox">
+            <input class="checkbox" type="checkbox">
+          </div>
+          <div class="task_name">
+            <span class="task_entered_name">Attentively check the file</span>
+            <span class="task_deadline_name">deadline</span>
+            <span class="task_deadline_date">01.01.2015</span>
+          </div>
+          <div class="task_img">
+            <%= image_tag("list_arrow.png", class: "arrow_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_pen.png", class: "pen_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_trash.png", class: "trash_list_img") %>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="task_block">
+          <div class="task_checkbox">
+            <input class="checkbox" type="checkbox">
+          </div>
+          <div class="task_name">
+            <span class="task_entered_name">Write HTML & CSS</span>
+            <span class="task_deadline_name">deadline</span>
+            <span class="task_deadline_date">01.01.2015</span>
+          </div>
+          <div class="task_img">
+            <%= image_tag("list_arrow.png", class: "arrow_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_pen.png", class: "pen_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_trash.png", class: "trash_list_img") %>
+          </div>
+        </div>
+      </li>
+
+      <li>
+        <div class="task_block">
+          <div class="task_checkbox">
+            <input class="checkbox" type="checkbox">
+          </div>
+          <div class="task_name">
+            <span class="task_entered_name">Add Javascript to implement adding / editing / removing for todo items list taking into account as more use cases as possible</span>
+            <span class="task_deadline_name">deadline</span>
+            <span class="task_deadline_date">01.01.2015</span>
+          </div>
+          <div class="task_img">
+            <%= image_tag("list_arrow.png", class: "arrow_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_pen.png", class: "pen_list_img") %>
+            <%= image_tag("list_line.png", class: "line_list_img") %>
+            <%= image_tag("list_trash.png", class: "trash_list_img") %>
+          </div>
+        </div>
+      </li>
+
+    </ul> <!--end task_ul-->
+  </div> <!--end list_window-->
+</div> <!--end main-->
+
+
+<a href="" class="button">
+    <%= image_tag("addlist_button.gif", class: "list_img") %>
+    <span class="addlist">Add TODO List</span>
+</a>
+
+<div id="pusher"></div> <!-- липкий футер -->
+<div id="footer"> <!-- липкий футер -->
+  <footer>&copy; Ruby Garage</footer>
+</div>
+</body>
+</html>

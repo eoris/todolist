@@ -1,0 +1,7 @@
+<% if @result %>
+$("<%= escape_javascript(render @project) %>").appendTo(".projects");
+$('.new_project').slideUp(500);
+// $(".projects_windows").html("<%= escape_javascript(render @project) %>");
+<% else %>
+
+<% end %>
