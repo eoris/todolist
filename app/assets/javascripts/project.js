@@ -12,15 +12,16 @@ $(document).ready(function(){
   	});
   });
 
+//hide title and show edit project form
   $('.projects').on('click', ".title_pen_list_img", function(){
-  	$('.title').hide();
-  	$('.edit_project').css("display", "inline-block");
-  	return false;
+  	$(this).parents(".project").find(".title").hide();
+  	$(this).parents(".project").find('.edit_project').css("display", "inline-block");
   });
 
-  // $('.projects').on('click', ".title_pen_list_img", function(){
-  // 	$('.edit_project').css("display", "inline-block");
-  // 	return false;
-  // });
+
+  $('.projects').on('click', ".edit_project_button", function(){
+  	$(this).parents(".project").find(".title").show();
+  	$(this).parents(".project").find(".edit_project").css("display", "none");
+  });
 
 })
