@@ -61,6 +61,7 @@ span.title{
   float: right;
   margin: 16px 0px;
   display: none;
+  cursor: pointer;
 }
 
 .title_trash_list_img{
@@ -129,6 +130,7 @@ input.deadline{
   border-radius: 0 10px 10px 0;
   font-family: "gill sans mt", serif;
   font-size: 14px;
+  color: white;
 }
 
 ul{

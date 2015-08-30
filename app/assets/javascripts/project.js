@@ -6,11 +6,11 @@ $(document).ready(function(){
   });
 
 //remove project window
-  $('.projects').on('click', ".title_trash_list_img", function(){
-  	$(this).parents(".project").fadeOut(500, function() {
-  		$(this).remove();
-  	});
-  });
+  // $('.projects').on('click', ".title_trash_list_img", function(){
+  // 	$(this).parents(".project").fadeOut(500, function() {
+  // 		$(this).remove();
+  // 	});
+  // });
 
 //hide title and show edit project form
   $('.projects').on('click', ".title_pen_list_img", function(){

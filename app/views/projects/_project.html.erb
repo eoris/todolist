@@ -8,7 +8,7 @@
   <% end %>
 
   <%= image_tag("note.gif", class: "note_list_img") %>
-  <span class="title">
+  <span class="title" id="title<%= project.id %>">
     <%= I18n.t('projects.title', project_name: project.title) %>
   </span>
   <%= link_to image_tag("title_trash.gif", class: "title_trash_list_img"), project_path(project), remote: true, method: :delete %>

@@ -4,12 +4,28 @@
 		"selected_items":
 		[
 			[
-				"c",
-				"click"
+				"res",
+				"respond_to"
+			],
+			[
+				"f",
+				"function"
 			],
 			[
 				"re",
-				"redirect_to"
+				"return"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"i",
+				"inline-block"
+			],
+			[
+				"c",
+				"click"
 			],
 			[
 				"fu",
@@ -40,26 +56,10 @@
 	"buffers":
 	[
 		{
-			"file": "app/controllers/projects_controller.rb",
-			"settings":
-			{
-				"buffer_size": 774,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "app/views/projects/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 627,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "app/views/projects/destroy.js",
-			"settings":
-			{
-				"buffer_size": 0,
+				"buffer_size": 610,
 				"line_ending": "Unix"
 			}
 		},
@@ -67,15 +67,47 @@
 			"file": "app/views/projects/_project.html.erb",
 			"settings":
 			{
-				"buffer_size": 1013,
+				"buffer_size": 1016,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/views/projects/create.js.erb",
+			"file": "app/controllers/projects_controller.rb",
 			"settings":
 			{
-				"buffer_size": 179,
+				"buffer_size": 918,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/projects/destroy.js.erb",
+			"settings":
+			{
+				"buffer_size": 1,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/project.rb",
+			"settings":
+			{
+				"buffer_size": 111,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/javascripts/project.js",
+			"settings":
+			{
+				"buffer_size": 830,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/assets/stylesheets/home.scss",
+			"settings":
+			{
+				"buffer_size": 4900,
 				"line_ending": "Unix"
 			}
 		}
@@ -115,8 +147,29 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/home/eoris/todolist",
+		"/home/eoris/todolist/app",
+		"/home/eoris/todolist/app/assets",
+		"/home/eoris/todolist/app/assets/javascripts",
+		"/home/eoris/todolist/app/assets/stylesheets",
+		"/home/eoris/todolist/app/controllers",
+		"/home/eoris/todolist/app/models",
+		"/home/eoris/todolist/app/views",
+		"/home/eoris/todolist/app/views/layouts",
+		"/home/eoris/todolist/app/views/projects"
+	],
 	"file_history":
 	[
+		"/home/eoris/todolist/app/views/projects/update.js.erb",
+		"/home/eoris/todolist/app/views/projects/create.js.erb",
+		"/home/eoris/todolist/todolist.sublime-project",
+		"/home/eoris/todolist/todolist.sublime-workspace",
+		"/home/eoris/todolist/app/views/projects/_project.html.erb",
+		"/home/eoris/todolist/app/controllers/projects_controller.rb",
+		"/home/eoris/todolist/app/views/projects/destroy.js",
+		"/home/eoris/todolist/app/views/projects/index.html.erb",
 		"/home/eoris/todolist/app/models/project.rb",
 		"/home/eoris/todolist/config/application.rb",
 		"/home/eoris/todolist/app/views/layouts/application.html.erb",
@@ -213,9 +266,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/home/eoris/todolist/app/views/projects"
 		]
 	},
 	"find_state":
@@ -223,6 +277,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"update",
+			"article",
+			"arti",
+			"edit_project",
 			"list_tra",
 			"article",
 			"Article.",
@@ -280,57 +338,28 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "app/controllers/projects_controller.rb",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 774,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
 					"file": "app/views/projects/index.html.erb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 627,
+						"buffer_size": 610,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								127,
+								127
 							]
 						],
 						"settings":
 						{
-							"spell_check": false,
 							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
@@ -339,16 +368,76 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/projects/_project.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1016,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								213,
+								213
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "app/views/projects/destroy.js",
+					"file": "app/controllers/projects_controller.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								382,
+								382
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/views/projects/destroy.js.erb",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 1,
 						"regions":
 						{
 						},
@@ -371,27 +460,53 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "app/views/projects/_project.html.erb",
+					"buffer": 4,
+					"file": "app/models/project.rb",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1013,
+						"buffer_size": 111,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								104,
+								104
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/assets/javascripts/project.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 830,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								346,
+								346
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -401,31 +516,33 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "app/views/projects/create.js.erb",
+					"buffer": 6,
+					"file": "app/assets/stylesheets/home.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 179,
+						"buffer_size": 4900,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1401,
+								1401
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Rails/JavaScript (Rails).tmLanguage"
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 835.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]

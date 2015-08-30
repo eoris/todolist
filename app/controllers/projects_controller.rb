@@ -14,7 +14,7 @@ class ProjectsController < ApplicationController
         format.json { render json: @project, status: :created, location: @project }
       else
         format.js   {render 'index'}
-        format.html { render action: "new" }
+        format.html { render action: "index" }
         format.json { render json: @project.errors, status: :unprocessable_entity }
       end
     end
@@ -22,7 +22,17 @@ class ProjectsController < ApplicationController
 
   def update
     @project = Project.find(params[:id])
-    @project.update(project_params)
+    respond_to do |format|
+      if @project.update(project_params)
+        format.html { redirect_to @project, notice: 'Project was successfully updated.' }
+        format.js   {}
+        format.json { render json: @project, status: :created, location: @project }
+      else
+        format.js   { render 'index' }
+        format.html { render action: "index" }
+        format.json { render json: @project.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   def destroy
