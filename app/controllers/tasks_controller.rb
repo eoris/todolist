@@ -4,7 +4,15 @@ class TasksController < ApplicationController
 
   def create
     @project = Project.find(params[:project_id])
-    @task = @project.task.create(task_params)
+    @task = Task.new(task_params)
+
+    respond_to do |format|
+      if @task.save
+        format.js   {}
+      else
+        format.js   {render 'index'}
+      end
+    end
   end
 
   private
