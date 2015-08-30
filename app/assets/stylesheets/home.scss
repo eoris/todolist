@@ -103,7 +103,7 @@ img.addtask_plus{
   margin: 12px 14px 12px 16px;
 }
 
-input.add_field{
+input#task_title{
   height: 26px;
   width: 350px;
   margin: 8px 0px 8px 0px;
@@ -112,7 +112,7 @@ input.add_field{
   font-size: 14px;
 }
 
-input.deadline{
+input#task_date{
   height: 26px;
   width: 150px;
   margin: 8px 0px 8px -5px;
