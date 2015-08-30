@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # get 'projects/index'
 
-  resources :projects do
+  resources :projects, only: [:index, :create, :update, :destroy] do
     resources :tasks
   end
 
