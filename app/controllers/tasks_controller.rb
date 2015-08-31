@@ -13,6 +13,12 @@ class TasksController < ApplicationController
     end
   end
 
+  def destroy
+    @project = Project.find(params[:project_id])
+    @task = @project.tasks.find(params[:id])
+    @task.destroy
+  end
+
   private
     def task_params
       params.require(:task).permit(:title, :date)

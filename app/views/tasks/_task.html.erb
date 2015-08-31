@@ -14,7 +14,7 @@
             <%= image_tag("list_line.png", class: "line_list_img") %>
             <%= image_tag("list_pen.png", class: "pen_list_img") %>
             <%= image_tag("list_line.png", class: "line_list_img") %>
-            <%= image_tag("list_trash.png", class: "trash_list_img") %>
+            <%= link_to image_tag("list_trash.png", class: "trash_list_img"), [task.project, task], remote: true, method: :delete  %>
           </div>
 
       </li>
