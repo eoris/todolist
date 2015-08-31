@@ -71,7 +71,7 @@
 			"file": "app/views/projects/index.html.erb",
 			"settings":
 			{
-				"buffer_size": 656,
+				"buffer_size": 627,
 				"line_ending": "Unix"
 			}
 		},
@@ -79,7 +79,7 @@
 			"file": "app/views/projects/_project.html.erb",
 			"settings":
 			{
-				"buffer_size": 841,
+				"buffer_size": 1013,
 				"line_ending": "Unix"
 			}
 		},
@@ -103,7 +103,7 @@
 			"file": "app/controllers/projects_controller.rb",
 			"settings":
 			{
-				"buffer_size": 1189,
+				"buffer_size": 774,
 				"line_ending": "Unix"
 			}
 		},
@@ -116,10 +116,10 @@
 			}
 		},
 		{
-			"file": "app/assets/javascripts/show_new_project_form.js",
+			"file": "app/assets/javascripts/project.js",
 			"settings":
 			{
-				"buffer_size": 140,
+				"buffer_size": 346,
 				"line_ending": "Unix"
 			}
 		},
@@ -127,7 +127,7 @@
 			"file": "app/views/projects/destroy.js",
 			"settings":
 			{
-				"buffer_size": 234,
+				"buffer_size": 1,
 				"line_ending": "Unix"
 			}
 		},
@@ -135,7 +135,7 @@
 			"file": "app/assets/stylesheets/home.scss",
 			"settings":
 			{
-				"buffer_size": 4740,
+				"buffer_size": 4761,
 				"line_ending": "Unix"
 			}
 		}
@@ -195,6 +195,7 @@
 	],
 	"file_history":
 	[
+		"/home/eoris/todolist/app/views/projects/_error.html.erb",
 		"/home/eoris/todolist/app/assets/javascripts/delete.coffee",
 		"/home/eoris/todolist/app/views/projects/HTML_index.html",
 		"/home/eoris/todolist/config/routes.rb",
@@ -289,6 +290,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"article",
 			"project",
 			"list_window",
 			"article",
@@ -340,7 +342,7 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -349,15 +351,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 656,
+						"buffer_size": 627,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								101,
-								101
+								463,
+								463
 							]
 						],
 						"settings":
@@ -370,7 +372,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -379,15 +381,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 841,
+						"buffer_size": 1013,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								42,
-								42
+								190,
+								190
 							]
 						],
 						"settings":
@@ -400,7 +402,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -456,7 +458,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
@@ -465,15 +467,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1189,
+						"buffer_size": 774,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								647,
-								647
+								668,
+								668
 							]
 						],
 						"settings":
@@ -483,10 +485,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": -0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -502,8 +504,8 @@
 						"selection":
 						[
 							[
-								57,
-								57
+								91,
+								91
 							]
 						],
 						"settings":
@@ -511,19 +513,47 @@
 							"syntax": "Packages/Rails/JavaScript (Rails).tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": -0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 6,
-					"file": "app/assets/javascripts/show_new_project_form.js",
+					"file": "app/assets/javascripts/project.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 140,
+						"buffer_size": 346,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								342,
+								342
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/projects/destroy.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1,
 						"regions":
 						{
 						},
@@ -542,35 +572,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "app/views/projects/destroy.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 234,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								234,
-								234
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -579,23 +581,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4740,
+						"buffer_size": 4761,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								604,
-								604
-							],
-							[
-								651,
-								651
-							],
-							[
-								4116,
-								4116
+								1212,
+								1212
 							]
 						],
 						"settings":
@@ -605,10 +599,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3175.0,
+						"translation.y": 700.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
