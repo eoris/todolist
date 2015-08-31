@@ -154,7 +154,7 @@ ul li:hover{
 
 ul li:last-child:hover{
   background: #FCFED5;
-  border-radius: 0px 0px 20px 20px;
+/*  border-radius: 0px 0px 20px 20px;*/
 }
 
 ul .vertical_lines_1{
@@ -195,7 +195,9 @@ ul .vertical_lines_3{
   display: inline-block;
   width: 533px;
   padding: 15px 0 15px 7px;
-  line-height: 14px;
+  line-height: 18px;
+  border-left: 3px double #efdadf;
+  border-right: 1px solid #e7ebea;
 }
 
 .task_entered_name{

@@ -1,16 +1,16 @@
 class TasksController < ApplicationController
-  def index
-  end
 
   def create
     @project = Project.find(params[:project_id])
-    @task = Task.new(task_params)
+    # @task = Task.new(task_params)
+
+    @task = @project.tasks.create(task_params)
 
     respond_to do |format|
       if @task.save
         format.js   {}
       else
-        format.js   {render 'index'}
+        format.js   {render nothing: true}
       end
     end
   end

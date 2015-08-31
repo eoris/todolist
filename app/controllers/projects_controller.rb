@@ -8,14 +8,11 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(project_params)
     respond_to do |format|
+      
       if @result = @project.save
-        format.html { redirect_to @project, notice: 'Project was successfully created.' }
         format.js   {}
-        format.json { render json: @project, status: :created, location: @project }
       else
-        format.js   {render 'index'}
-        format.html { render action: "index" }
-        format.json { render json: @project.errors, status: :unprocessable_entity }
+        format.js   {render nothing: true} 
       end
     end
   end
@@ -23,14 +20,11 @@ class ProjectsController < ApplicationController
   def update
     @project = Project.find(params[:id])
     respond_to do |format|
+
       if @project.update(project_params)
-        format.html { redirect_to @project, notice: 'Project was successfully updated.' }
         format.js   {}
-        format.json { render json: @project, status: :created, location: @project }
       else
-        format.js   { render 'index' }
-        format.html { render action: "index" }
-        format.json { render json: @project.errors, status: :unprocessable_entity }
+        format.js   {render nothing: true}
       end
     end
   end

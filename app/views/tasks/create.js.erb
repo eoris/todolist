@@ -1,1 +1,1 @@
-$("<%= escape_javascript(render @task) %>").appendTo(".tasks_ul");
+$("<%= escape_javascript(render @task) %>").appendTo("#<%=@project.id %> .tasks_ul");
