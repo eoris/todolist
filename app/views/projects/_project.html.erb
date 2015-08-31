@@ -19,7 +19,7 @@
 <!--   <input class="add_field" type="text" placeholder="Start typing here to create a task...">
   <input class="deadline" type="date" placeholder="deadline">
   <input class="addtask_button" type="submit" value="Add Task"> -->
-  <%= form_for [project, @project.tasks.build], remote: true do |f| %>
+  <%= form_for [project, Task.new], remote: true do |f| %>
     <%= f.text_field :title, :placeholder => "Start typing here to create a task..." %>
     <%= f.date_field :date %>
     <%= f.submit "Add Task", class: "addtask_button" %>
