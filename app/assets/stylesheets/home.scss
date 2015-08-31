@@ -157,30 +157,6 @@ ul li:last-child:hover{
 /*  border-radius: 0px 0px 20px 20px;*/
 }
 
-ul .vertical_lines_1{
-  display: block;
-  min-height: 49px;
-  position: absolute;
-  border-right: 1px solid #F2E2E6;
-  left: 43px;
-}
-
-ul .vertical_lines_2{
-  display: block;
-  min-height: 49px;
-  position: absolute;
-  border-right: 1px solid #F2E2E6;
-  left: 48px;
-}
-
-ul .vertical_lines_3{
-  display: block;
-  min-height: 49px;
-  position: absolute;
-  border-right: 1px solid #E7EBEA;
-  left: 591px;
-}
-
 .task_checkbox{
   display: inline-block;
   width: 48px;
@@ -194,16 +170,34 @@ ul .vertical_lines_3{
 .task_name{
   display: inline-block;
   width: 533px;
-  padding: 15px 0 15px 7px;
+  padding: 15px 0px 15px 33px;
   line-height: 18px;
   border-left: 3px double #efdadf;
   border-right: 1px solid #e7ebea;
 }
 
+.edit_task{
+  display: inline-block;
+  width: 566px;
+  padding: 15px -1px 15px 7px;
+  line-height: 18px;
+  border-left: 3px double #efdadf;
+  border-right: 1px solid #e7ebea;
+}
+
+input#task_title.task_title_update{
+  width: 265px;
+  margin-left: 10px;
+}
+
+input#task_date.task_date_update{
+  width: 116px;
+}
+
 .task_entered_name{
  display: inline-block;
  word-wrap: break-word;
- width: 365px;
+ width: 340px;
  line-height: 14px;
  text-align: justify;
 }
@@ -212,7 +206,7 @@ ul .vertical_lines_3{
   display: inline-block;
   vertical-align: top;
   line-height: 14px;
-  padding-left: 15px;
+/*  padding-left: 15px;*/
 }
 
 .task_deadline_date{
@@ -222,9 +216,10 @@ ul .vertical_lines_3{
 }
 
 .task_img{
-  width: 80px;
+  width: 52px;
   vertical-align: top;
-  margin: 13px 0 0 7px;
+  margin: 14px 16px 0 0px;
+  float: right;
   display: none;
 }
 
@@ -235,10 +230,6 @@ ul .vertical_lines_3{
 .task_block {
   border-bottom: 1px solid #E7EBEA
   }
-
-.arrow_list_img{
-  margin-right: 5px;
-}
 
 .pen_list_img{
   margin: 0 5px 0 5px;

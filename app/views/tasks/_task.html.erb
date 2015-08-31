@@ -10,16 +10,14 @@
           </div>
           
           <div class="task_img">
-            <%= image_tag("list_arrow.png", class: "arrow_list_img") %>
-            <%= image_tag("list_line.png", class: "line_list_img") %>
             <%= image_tag("list_pen.png", class: "pen_list_img") %>
             <%= image_tag("list_line.png", class: "line_list_img") %>
             <%= link_to image_tag("list_trash.png", class: "trash_list_img"), [task.project, task], remote: true, method: :delete  %>
           </div>
 
           <%= form_for [task.project, task], remote: true, method: :patch do |f| %>
-            <%= f.text_field :title %>
-            <%= f.date_field :date %>
+            <%= f.text_field :title, class: "task_title_update" %>
+            <%= f.date_field :date, class: "task_date_update" %>
             <%= f.submit 'Update task', class: "edit_task_button" %>
           <% end %>
 
