@@ -2,8 +2,6 @@ class TasksController < ApplicationController
 
   def create
     @project = Project.find(params[:project_id])
-    # @task = Task.new(task_params)
-
     @task = @project.tasks.create(task_params)
 
     respond_to do |format|
