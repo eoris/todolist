@@ -20,11 +20,12 @@ class TasksController < ApplicationController
   end
 
   def update
-    @project = Project.find(params[:id])
-    @task = @project.tasks(task_params)
+    # @project = Project.find(params[:id])
+    # @task = @project.tasks.find
+    @task = Task.find(params[:id])
     respond_to do |format|
 
-      if @task.update(project_params)
+      if @task.update(task_params)
         format.js   {}
       else
         format.js   {render nothing: true}
