@@ -19,6 +19,19 @@ class TasksController < ApplicationController
     @task.destroy
   end
 
+  def update
+    @project = Project.find(params[:id])
+    @task = @project.tasks(task_params)
+    respond_to do |format|
+
+      if @task.update(project_params)
+        format.js   {}
+      else
+        format.js   {render nothing: true}
+      end
+    end
+  end
+
   private
     def task_params
       params.require(:task).permit(:title, :date)

@@ -17,4 +17,10 @@
             <%= link_to image_tag("list_trash.png", class: "trash_list_img"), [task.project, task], remote: true, method: :delete  %>
           </div>
 
+          <%= form_for [task.project, task], remote: true, method: :patch do |f| %>
+            <%= f.text_field :title %>
+            <%= f.date_field :date %>
+            <%= f.submit 'Update task', class: "edit_task_button" %>
+          <% end %>
+
       </li>
