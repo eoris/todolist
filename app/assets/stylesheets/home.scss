@@ -140,7 +140,7 @@ ul{
   margin: 0;
 }
 
-.task_ul{
+.tasks_ul{
   display: list-item;
   list-style: none;
   width: 700px;
@@ -159,7 +159,7 @@ ul li:last-child:hover{
 
 ul .vertical_lines_1{
   display: block;
-  min-height: 100%;
+  min-height: 49px;
   position: absolute;
   border-right: 1px solid #F2E2E6;
   left: 43px;
@@ -167,7 +167,7 @@ ul .vertical_lines_1{
 
 ul .vertical_lines_2{
   display: block;
-  min-height: 100%;
+  min-height: 49px;
   position: absolute;
   border-right: 1px solid #F2E2E6;
   left: 48px;
@@ -175,7 +175,7 @@ ul .vertical_lines_2{
 
 ul .vertical_lines_3{
   display: block;
-  min-height: 100%;
+  min-height: 49px;
   position: absolute;
   border-right: 1px solid #E7EBEA;
   left: 591px;
