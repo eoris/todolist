@@ -18,10 +18,23 @@ $(document).ready(function(){
   	$(this).parents(".project").find('.edit_project').css("display", "inline-block");
   });
 
-
+//show title and hide edit project form
   $('.projects').on('click', ".edit_project_button", function(){
   	$(this).parents(".project").find(".title").show();
   	$(this).parents(".project").find(".edit_project").css("display", "none");
   });
 
+//hide task title and show edit task form
+  $('.projects').on('click', ".pen_list_img", function(){
+  	$(this).parents(".task_block").find(".task_name").hide();
+  	$(this).parents(".task_block").find('.edit_task').css("display", "inline-block");
+  });
+
+//show task and hide edit task form
+   $('.projects').on('click', ".edit_task_button", function(){
+  	$(this).parents(".task_block").find(".task_name").show();
+  	$(this).parents(".task_block").find(".edit_task").css("display", "none");
+  });
+
 })
+

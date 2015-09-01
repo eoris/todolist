@@ -164,13 +164,13 @@ ul li:last-child:hover{
 }
 
 .checkbox{
-  margin: 17px;
+  margin: 17px 17px 17px 20px ;
 }
 
 .task_name{
   display: inline-block;
-  width: 533px;
-  padding: 15px 0px 15px 33px;
+  width: 556px;
+  padding: 15px 0px 15px 10px;
   line-height: 18px;
   border-left: 3px double #efdadf;
   border-right: 1px solid #e7ebea;
@@ -183,6 +183,7 @@ ul li:last-child:hover{
   line-height: 18px;
   border-left: 3px double #efdadf;
   border-right: 1px solid #e7ebea;
+  display: none;
 }
 
 input#task_title.task_title_update{
@@ -194,10 +195,14 @@ input#task_date.task_date_update{
   width: 116px;
 }
 
+input.edit_task_button{
+  height: 32px;
+}
+
 .task_entered_name{
  display: inline-block;
  word-wrap: break-word;
- width: 340px;
+ width: 370px;
  line-height: 14px;
  text-align: justify;
 }
@@ -206,13 +211,15 @@ input#task_date.task_date_update{
   display: inline-block;
   vertical-align: top;
   line-height: 14px;
-/*  padding-left: 15px;*/
+  color: #416CA7;
+  margin-top: 2px;
 }
 
 .task_deadline_date{
   display: inline-block;
   vertical-align: top;
   line-height: 14px;
+  margin-top: 2px;
 }
 
 .task_img{
@@ -233,6 +240,7 @@ input#task_date.task_date_update{
 
 .pen_list_img{
   margin: 0 5px 0 5px;
+  cursor: pointer;
 }
 
 .trash_list_img{
