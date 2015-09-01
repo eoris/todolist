@@ -33,6 +33,18 @@ class TasksController < ApplicationController
     end
   end
 
+  def sort
+    @task = Task.find(params[:id])
+    @task.position = params[:position]
+    respond_to do |format|
+      if @task.save
+        format.js {}
+      else
+        format.js {}
+      end
+    end
+  end
+
   private
     def task_params
       params.require(:task).permit(:title, :date)
