@@ -7,10 +7,12 @@
     <%= render @projects %>
   </div>
 
+  <div class="button_block">
   <a href="" class="button">
       <%= image_tag("addlist_button.gif", class: "list_img") %>
       <span class="addlist">Add TODO List</span>
   </a>
+  </div>
 
   <%= form_for @project, remote: true do |f| %>
     <%= f.text_field :title, :placeholder => ' Enter new project here..' %>
