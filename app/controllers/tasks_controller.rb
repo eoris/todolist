@@ -35,7 +35,7 @@ class TasksController < ApplicationController
 
   def sort
     @task = Task.find(params[:id])
-    @task.position = params[:position]
+    @task.position = params[:position].to_i -1
     respond_to do |format|
       if @task.save
         format.js {}
@@ -47,6 +47,6 @@ class TasksController < ApplicationController
 
   private
     def task_params
-      params.require(:task).permit(:title, :date)
+      params.require(:task).permit(:title, :date, :position)
     end
 end
