@@ -33,16 +33,23 @@ class TasksController < ApplicationController
     end
   end
 
+  # def sort
+  #   @task = Task.find(params[:id])
+  #   @task.position = params[:position]
+  #   respond_to do |format|
+  #     if @task.save
+  #       format.js {}
+  #     else
+  #       format.js {}
+  #     end
+  #   end
+  # end
+
   def sort
-    @task = Task.find(params[:id])
-    @task.position = params[:position]
-    respond_to do |format|
-      if @task.save
-        format.js {}
-      else
-        format.js {}
-      end
+    params[:task].each_with_index do |id, index|
+     Task.where(id: id).update_all({position: index+1})
     end
+    render nothing: true
   end
 
   private

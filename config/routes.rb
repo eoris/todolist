@@ -2,9 +2,11 @@ Rails.application.routes.draw do
   # get 'projects/index'
 
   resources :projects, only: [:index, :create, :update, :destroy] do
-    resources :tasks, only: [:create, :update, :destroy, :sort]
-      post 'tasks/sort' => 'tasks#sort', as: :sort_tasks
+    resources :tasks, only: [:create, :update, :destroy, :sort] do
+      collection { post :sort }
+    end
   end
+      # post 'tasks/sort' => 'tasks#sort', as: :sort_tasks
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

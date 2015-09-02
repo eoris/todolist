@@ -36,7 +36,12 @@ $(document).ready(function(){
   	$(this).parents(".task_block").find(".edit_task").css("display", "none");
   });
 
-   $('#sortable').sortable()
+   $('#sortable').sortable({
+        axis:'y',
+        update: function(){
+          $.post($(this).data('update-url'), $(this).sortable('serialize')
+    	);}
+	});
 
 })
 

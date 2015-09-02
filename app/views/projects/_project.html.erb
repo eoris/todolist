@@ -23,7 +23,7 @@
   <% end %>
 </div>
 
-<ul class="tasks_ul" id="sortable">
+<ul class="tasks_ul" id="sortable" update-url-data="<%= sort_project_tasks_url(project.id) %>">
   <%= render project.tasks %>
 </ul>
 
