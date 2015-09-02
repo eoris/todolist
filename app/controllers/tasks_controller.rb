@@ -46,6 +46,7 @@ class TasksController < ApplicationController
   # end
 
   def sort
+  	# @tasks = Task.order("position")
     params[:task].each_with_index do |id, index|
      Task.where(id: id).update_all({position: index+1})
     end
