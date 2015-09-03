@@ -30,6 +30,7 @@ $(document).ready(function(){
   });
 
 //sorting tasks
+$('.projects').on('click', '.task', function() {
 $('.tasks_ul').sortable({
   items: 'li',
   cursor: 'move',
@@ -40,6 +41,7 @@ $('.tasks_ul').sortable({
     data: $(this).sortable('serialize')
     });
   }
+});
 });
 
 })
