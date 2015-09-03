@@ -36,11 +36,23 @@ $(document).ready(function(){
   	$(this).parents(".task_block").find(".edit_task").css("display", "none");
   });
 
-   $('.tasks_ul').sortable({
-        update: function(){
-          $.post($(this).data('update-url'), $(this).sortable('serialize')
-    	);}
-	});
+ //   $('.tasks_ul').sortable({
+ //        update: function(){
+ //          $.post($(this).data('update-url'), $(this).sortable('serialize')
+ //    	);}
+	// });
+
+$('.tasks_ul').bind().sortable({
+  items: 'li',
+  cursor: 'move',
+  update: function(){
+    $.ajax({
+    url: $(this).attr('update-url-data'),
+    type: 'post',
+    data: $(this).sortable('serialize')
+    });
+  }
+});
 
 })
 

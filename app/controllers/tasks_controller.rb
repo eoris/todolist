@@ -48,7 +48,7 @@ class TasksController < ApplicationController
   def sort
   	# @tasks = Task.order("position")
     params[:task].each_with_index do |id, index|
-     Task.where(id: id).update_all({position: index+1})
+    Task.where(id: id).update_all({position: index+1})
     end
     render nothing: true
   end
