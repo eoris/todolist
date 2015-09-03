@@ -1,7 +1,8 @@
 <%= content_tag_for :li, task do %>
 
   <div class="task_checkbox">
-    <input class="checkbox" type="checkbox">
+<!--     <input class="checkbox" type="checkbox"> -->
+    <%= check_box_tag 'done' %>
   </div>
           
   <div class="task_name">

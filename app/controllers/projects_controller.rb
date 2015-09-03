@@ -19,7 +19,6 @@ class ProjectsController < ApplicationController
   def update
     @project = Project.find(params[:id])
     respond_to do |format|
-
       if @project.update(project_params)
         format.js  {}
       else
