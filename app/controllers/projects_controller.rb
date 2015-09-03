@@ -8,11 +8,10 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(project_params)
     respond_to do |format|
-      
       if @result = @project.save
-        format.js   {}
+        format.js  {}
       else
-        format.js   {render nothing: true} 
+        format.js  {render nothing: true}
       end
     end
   end
@@ -22,9 +21,9 @@ class ProjectsController < ApplicationController
     respond_to do |format|
 
       if @project.update(project_params)
-        format.js   {}
+        format.js  {}
       else
-        format.js   {render nothing: true}
+        format.js  {render nothing: true}
       end
     end
   end
@@ -37,7 +36,7 @@ class ProjectsController < ApplicationController
 
   private
     def project_params
-      params.require(:project).permit(:title)      
+      params.require(:project).permit(:title)
     end
 
 end

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :projects, only: [:index, :create, :update, :destroy] do
     resources :tasks, only: [:create, :update, :destroy, :sort] do
       collection { post :sort }
+      # post 'tasks/sort', to: 'tasks#sort', as: 'sort_tasks'
     end
   end
       # post 'tasks/sort' => 'tasks#sort', as: :sort_tasks

@@ -1,23 +1,25 @@
-        <%= content_tag_for :li, task do %>
-          <div class="task_checkbox">
-            <input class="checkbox" type="checkbox">
-          </div>
-          
-          <div class="task_name">
-            <span class="task_entered_name" id="task_title_<%= task.id %>"><%= I18n.t('tasks.title', task_name: task.title) %></span>
-            <span class="task_deadline_name">deadline</span>
-            <span class="task_deadline_date" id="date_<%= task.id %>"><%= task.date %></span>
-          </div>
-          
-          <div class="task_img">
-            <%= image_tag("list_pen.png", class: "pen_list_img") %>
-            <%= image_tag("list_line.png", class: "line_list_img") %>
-            <%= link_to image_tag("list_trash.png", class: "trash_list_img"), [task.project, task], remote: true, method: :delete  %>
-          </div>
+<%= content_tag_for :li, task do %>
 
-          <%= form_for [task.project, task], remote: true, method: :patch do |f| %>
-            <%= f.text_field :title, class: "task_title_update" %>
-            <%= f.date_field :date, class: "task_date_update" %>
-            <%= f.submit 'Update', class: "edit_task_button" %>
-          <% end %>
-        <% end %>
+  <div class="task_checkbox">
+    <input class="checkbox" type="checkbox">
+  </div>
+          
+  <div class="task_name">
+    <span class="task_entered_name" id="task_title_<%= task.id %>"><%= I18n.t('tasks.title', task_name: task.title) %></span>
+    <span class="task_deadline_name">deadline</span>
+    <span class="task_deadline_date" id="date_<%= task.id %>"><%= task.date %></span>
+  </div>
+          
+  <div class="task_img">
+    <%= image_tag("list_pen.png", class: "pen_list_img") %>
+    <%= image_tag("list_line.png", class: "line_list_img") %>
+    <%= link_to image_tag("list_trash.png", class: "trash_list_img"), [task.project, task], remote: true, method: :delete  %>
+  </div>
+
+  <%= form_for [task.project, task], remote: true, method: :patch do |f| %>
+    <%= f.text_field :title, class: "task_title_update" %>
+    <%= f.date_field :date, class: "task_date_update" %>
+    <%= f.submit 'Update', class: "edit_task_button" %>
+  <% end %>
+
+<% end %>
