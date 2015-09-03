@@ -35,7 +35,7 @@ class TasksController < ApplicationController
 
   # def sort
   #   @task = Task.find(params[:id])
-  #   @task.position = params[:position].to_i -1
+  #   @task.position = params[:position]
   #   respond_to do |format|
   #     if @task.save
   #       format.js {}
@@ -45,22 +45,13 @@ class TasksController < ApplicationController
   #   end
   # end
 
-  # def sort
-  #   params[:task].each_with_index do |id, index|
-  #    Task.where(id: id).update_all({position: index+1})
-  #   end
-  #   render nothing: true
-  # end
-
-def sort
+  def sort
+  	# @tasks = Task.order("position")
     params[:task].each_with_index do |id, index|
-        task = Task.find(id)
-        task.update_all(:position, index) if task
+     Task.where(id: id).update_all({position: index+1})
     end
     render nothing: true
-end
-
-
+  end
 
   private
     def task_params

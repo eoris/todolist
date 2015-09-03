@@ -1,4 +1,4 @@
-      <li class="task_block" id="<%=task.id %>">
+        <%= content_tag_for :li, task do %>
           <div class="task_checkbox">
             <input class="checkbox" type="checkbox">
           </div>
@@ -20,5 +20,4 @@
             <%= f.date_field :date, class: "task_date_update" %>
             <%= f.submit 'Update', class: "edit_task_button" %>
           <% end %>
-
-      </li>
+        <% end %>

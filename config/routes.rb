@@ -7,6 +7,7 @@ Rails.application.routes.draw do
       # post 'tasks/sort', to: 'tasks#sort', as: 'sort_tasks'
     end
   end
+      # post 'tasks/sort' => 'tasks#sort', as: :sort_tasks
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
