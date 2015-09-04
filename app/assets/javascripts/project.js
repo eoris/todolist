@@ -46,4 +46,41 @@ $(document).ready(function(){
     });
   });
 
+  //checkbox
+//   $(".checkbox").on('change', function(){
+//   if (this.checked){
+//     $.ajax({
+//       url: '/todos/'+this.value+'/toggle',
+//       type: 'PUT',
+//       data: {"completed": this.checked}
+//     });
+//   }
+//   else {
+//      alert("no");
+//   }
+// });
+
+  // $('.projects').on('change','.checkbox', function() {
+  //   var done = $(this).parents(".task").find(".checkbox").prop("checked");
+  //   $.ajax({
+  //     url: $(this).parents(".task").find(".task_checkbox").attr('checkbox-url-data'),
+  //     type: "put",
+  //     data: {"task[done]":done}
+  //   });
+  //   return false;
+  // }); 
+
+  $('.projects').on('change','.checkbox', function() {
+    var projectId = $(this).parents(".project").attr("id");
+    var taskId = $(this).parents(".task").attr("id").substring(5, 9999);
+    var path = "projects/" + projectId + "/tasks/" + taskId;
+    var done = $(this).parents(".task").find(".checkbox").prop("checked");
+    $.ajax({
+      type: "put",
+      url: path,
+      data: {"task[done]":done}
+    });
+    return false;
+  }); 
+
 })
