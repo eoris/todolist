@@ -20,4 +20,6 @@
 # To use the locales, use `I18n.t`:
 en:
   projects:
-    title: "%{project_name}"
+    title: "%{project_name}"  
+  tasks:
+    title: "%{task_name}"

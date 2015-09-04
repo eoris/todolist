@@ -4,21 +4,23 @@
   <h4>FROM RUBY GARAGE</h4>
 
   <div class="projects" >
-    <%= render @projects, id: params[:id] %>
+    <%= render @projects %>
   </div>
 
-  <a href="" class="button">
-      <%= image_tag("addlist_button.gif", class: "list_img") %>
-      <span class="addlist">Add TODO List</span>
-  </a>
+  <div class="button_block">
+    <a href="" class="button">
+        <%= image_tag("addlist_button.gif", class: "list_img") %>
+        <span class="addlist">Add TODO List</span>
+    </a>
+  </div>
 
   <%= form_for @project, remote: true do |f| %>
     <%= f.text_field :title, :placeholder => ' Enter new project here..' %>
     <%= f.submit 'Add Project' %>
   <% end %>
 
-  <div id="pusher"></div> <!-- липкий футер -->
-  <div id="footer"> <!-- липкий футер -->
+  <div id="pusher"></div>
+  <div id="footer"> 
     <footer>&copy; Ruby Garage</footer>
   </div>
   

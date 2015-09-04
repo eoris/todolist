@@ -8,13 +8,21 @@ class ProjectsController < ApplicationController
   def create
     @project = Project.new(project_params)
     respond_to do |format|
-      if @project.save
-        format.html { redirect_to @project, notice: 'Project was successfully created.' }
-        format.js   {}
-        format.json { render json: @project, status: :created, location: @project }
+      if @result = @project.save
+        format.js  {}
       else
-        format.html { render action: "new" }
-        format.json { render json: @project.errors, status: :unprocessable_entity }
+        format.js  {render nothing: true}
+      end
+    end
+  end
+
+  def update
+    @project = Project.find(params[:id])
+    respond_to do |format|
+      if @project.update(project_params)
+        format.js  {}
+      else
+        format.js  {render nothing: true}
       end
     end
   end
@@ -27,7 +35,7 @@ class ProjectsController < ApplicationController
 
   private
     def project_params
-      params.require(:project).permit(:title)      
+      params.require(:project).permit(:title)
     end
 
 end
