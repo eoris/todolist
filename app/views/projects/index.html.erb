@@ -1,7 +1,15 @@
 <div class="main">
 
+  <% if user_signed_in? %>
+      <span>Здравствуйте, <%= current_user.email %></span>
+      <%= link_to 'Выйти', destroy_user_session_path, :method => :delete %>
+  <% else %>
+      <%= link_to 'Войти', new_user_session_path %> или <%= link_to 'Зарегистрироваться',new_user_registration_path %>
+  <% end %>
+
   <h2>SIMPLE TODO LIST</h2>
   <h4>FROM RUBY GARAGE</h4>
+
 
   <div class="projects" >
     <%= render @projects %>
