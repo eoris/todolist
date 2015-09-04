@@ -5,14 +5,6 @@ $(document).ready(function(){
     return false; 
   });
 
-//hide project window
-  $('.projects').on('click', ".title_trash_list_img", function(){
-  	$(this).parents(".project").fadeOut(500, function() {
-  		$(this).remove();
-  	});
-  });
-})
-
 //hide title and show edit project form
   $('.projects').on('click', ".title_pen_list_img", function(){
     $(this).parents(".project").find(".title").hide();
