@@ -163,7 +163,7 @@ ul li:last-child:hover{
   vertical-align: top;
 }
 
-#done{
+.checkbox{
   margin: 17px 17px 17px 20px ;
 }
 
@@ -308,4 +308,25 @@ body {
   clear:left;
   height:0;
   padding: 50px;
+}
+
+.devise_login{
+  width: 100%;
+  margin: 100px auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.devise_sign_up{
+  width: 100%;
+  margin: 100px auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.devise_forgot_your_pass{
+  width: 100%;
+  margin: 100px auto;
+  display: inline-block;
+  text-align: center;
 }

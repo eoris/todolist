@@ -1,5 +1,7 @@
 class ProjectsController < ApplicationController
 
+  before_filter :authenticate_user!
+
   def index
     @project  = Project.new
     @projects = Project.all

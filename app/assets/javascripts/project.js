@@ -46,5 +46,18 @@ $(document).ready(function(){
     });
   });
 
-})
+//checkbox
+  $('.projects').on('change','.checkbox', function() {
+    var projectId = $(this).parents(".project").attr("id");
+    var taskId = $(this).parents(".task").attr("id").substring(5, 9999);
+    var path = "projects/" + projectId + "/tasks/" + taskId;
+    var done = $(this).parents(".task").find(".checkbox").prop("checked");
+    $.ajax({
+      type: "put",
+      url: path,
+      data: {"task[done]":done}
+    });
+    return false;
+  }); 
 
+})

@@ -19,6 +19,7 @@ class TasksController < ApplicationController
   end
 
   def update
+    @project = Project.find(params[:project_id])
     @task = Task.find(params[:id])
     respond_to do |format|
       if @task.update(task_params)
@@ -38,6 +39,6 @@ class TasksController < ApplicationController
 
   private
     def task_params
-      params.require(:task).permit(:title, :date, :position)
+      params.require(:task).permit(:title, :date, :position, :done)
     end
 end
