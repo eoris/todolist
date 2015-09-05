@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :users
+  get 'persons/profile'
+
   # get 'projects/index'
 
   resources :projects, only: [:index, :create, :update, :destroy] do
-    resources :tasks, only: [:create, :update, :destroy, :sort] do
+    resources :tasks, only: [:create, :update, :destroy] do
       collection { post :sort }
       # post 'tasks/sort', to: 'tasks#sort', as: 'sort_tasks'
     end
@@ -14,6 +17,8 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
    root 'projects#index'
+
+   get 'persons/profile', as: 'user_root'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

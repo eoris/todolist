@@ -1,4 +1,8 @@
 $(document).ready(function(){
+
+//line-through on done tasks
+$('.task:has(input:checked) span.task_entered_name').addClass('lined');
+
 //show "Add project" form
   $('.button').click(function() {
     $('.new_project').css("display", "block");
@@ -46,30 +50,7 @@ $(document).ready(function(){
     });
   });
 
-  //checkbox
-//   $(".checkbox").on('change', function(){
-//   if (this.checked){
-//     $.ajax({
-//       url: '/todos/'+this.value+'/toggle',
-//       type: 'PUT',
-//       data: {"completed": this.checked}
-//     });
-//   }
-//   else {
-//      alert("no");
-//   }
-// });
-
-  // $('.projects').on('change','.checkbox', function() {
-  //   var done = $(this).parents(".task").find(".checkbox").prop("checked");
-  //   $.ajax({
-  //     url: $(this).parents(".task").find(".task_checkbox").attr('checkbox-url-data'),
-  //     type: "put",
-  //     data: {"task[done]":done}
-  //   });
-  //   return false;
-  // }); 
-
+//checkbox
   $('.projects').on('change','.checkbox', function() {
     var projectId = $(this).parents(".project").attr("id");
     var taskId = $(this).parents(".task").attr("id").substring(5, 9999);
@@ -81,6 +62,12 @@ $(document).ready(function(){
       data: {"task[done]":done}
     });
     return false;
-  }); 
+  });
+
+//line-through on done tasks
+  $('.projects').on('change','.checkbox', function() {
+    if (this.checked) $(this).parents('.task').find('span.task_entered_name').addClass('lined');
+    else $(this).parents('.task').find('span.task_entered_name').removeClass('lined');
+  })
 
 })
