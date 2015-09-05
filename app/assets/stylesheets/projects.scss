@@ -296,7 +296,7 @@ body {
   position:relative;
 }
 
-#footer {
+#footer{
   position:absolute;
   bottom:10px;
   width:100%;
@@ -304,7 +304,7 @@ body {
   color: white;
 }
 
-#pusher {
+#pusher{
   clear:left;
   height:0;
   padding: 50px;
@@ -331,6 +331,13 @@ body {
   text-align: center;
 }
 
-.lined {
+.devise_persons_profile{
+  width: 100%;
+  margin: 100px auto;
+  display: inline-block;
+  text-align: center;
+}
+
+.lined{
   text-decoration: line-through;
 }
