@@ -1,4 +1,8 @@
 $(document).ready(function(){
+
+//line-through on done tasks
+$('.task:has(input:checked) span.task_entered_name').addClass('lined');
+
 //show "Add project" form
   $('.button').click(function() {
     $('.new_project').css("display", "block");
@@ -58,6 +62,12 @@ $(document).ready(function(){
       data: {"task[done]":done}
     });
     return false;
-  }); 
+  });
+
+//line-through on done tasks
+  $('.projects').on('change','.checkbox', function() {
+    if (this.checked) $(this).parents('.task').find('span.task_entered_name').addClass('lined');
+    else $(this).parents('.task').find('span.task_entered_name').removeClass('lined');
+  })
 
 })

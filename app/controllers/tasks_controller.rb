@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
 
   def create
-    @project = Project.find(params[:project_id])
+    @project = current_user.projects.find(params[:project_id])
     @task = @project.tasks.create(task_params)
     respond_to do |format|
       if @task.save
@@ -13,14 +13,14 @@ class TasksController < ApplicationController
   end
 
   def destroy
-    @project = Project.find(params[:project_id])
+    @project = current_user.projects.find(params[:project_id])
     @task = @project.tasks.find(params[:id])
     @task.destroy
   end
 
   def update
-    @project = Project.find(params[:project_id])
-    @task = Task.find(params[:id])
+    @project = current_user.projects.find(params[:project_id])
+    @task = @project.tasks.find(params[:id])
     respond_to do |format|
       if @task.update(task_params)
         format.js  {}
